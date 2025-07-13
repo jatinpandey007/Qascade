@@ -1,0 +1,19 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Dark mode styles */
+.dark body {
+  background-color: #1F2937; /* Gray-800 for dark mode */
+  color: #F3F4F6; /* Light gray text */
+}
