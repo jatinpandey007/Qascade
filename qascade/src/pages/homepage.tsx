@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
 import { Plus } from "lucide-react"
+import Navbar from '../components/common/navbar';
+import Footer from '../components/common/footer';
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header */}
-      
-
+      <Navbar/>
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-start">
         {/* Background img */}
@@ -133,10 +134,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      
-
-      
+      <Footer/>
     </div>
   )
 }
