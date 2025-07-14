@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
-import { Plus } from "lucide-react"
+// import { Plus } from "lucide-react"
 import Navbar from '../components/common/navbar';
 import Footer from '../components/common/footer';
+import VisionSection from '../components/VisionSection';
+import OfferingsSection from '../components/OfferingsSection';
 
 export default function HomePage() {
   return (
@@ -89,51 +91,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Our Approach Section */}
-      <section className="bg-gray-900 py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Content */}
-            <div>
-              <p className="text-xs font-medium tracking-wider text-gray-400 mb-8 uppercase">OUR APPROACH</p>
+      {/* Vision Section */}
+      <VisionSection />
 
-              <div className="space-y-6">
-                <div className="border-b border-gray-700 pb-4">
-                  <button className="flex items-center justify-between w-full text-left">
-                    <span className="text-xl font-light">Research</span>
-                    <Plus className="w-5 h-5" />
-                  </button>
-                </div>
-
-                <div className="border-b border-gray-700 pb-4">
-                  <button className="flex items-center justify-between w-full text-left">
-                    <span className="text-xl font-light">Blueprint</span>
-                    <Plus className="w-5 h-5" />
-                  </button>
-                </div>
-
-                <div className="border-b border-gray-700 pb-4">
-                  <button className="flex items-center justify-between w-full text-left">
-                    <span className="text-xl font-light">Applications</span>
-                    <Plus className="w-5 h-5" />
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            {/* Right img */}
-            <div className="relative">
-              <img
-                src="/placeholder.svg?height=500&width=600"
-                alt="Quantum computing equipment"
-                width={600}
-                height={500}
-                className="w-full h-auto rounded-lg"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Offerings Section */}
+      <OfferingsSection />
       <Footer/>
     </div>
   )
