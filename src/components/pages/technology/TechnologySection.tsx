@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Technology: React.FC = () => {
+const TechnologySection: React.FC = () => {
   return (
     <section className="py-16 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -32,4 +32,4 @@ const Technology: React.FC = () => {
   );
 };
 
-export default Technology;
+export default TechnologySection;

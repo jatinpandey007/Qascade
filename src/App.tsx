@@ -1,18 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import About from './components/pages/about';
-import Technology from './components/pages/technology';
-import Contact from './components/pages/contact';
-import HomePage from './pages/homepage';
+import AboutPage from './pages/about/AboutPage';
+import TechnologyPage from './pages/technology/TechnologyPage';
+import ContactPage from "./pages/contact/ContactPage";
+import HomePage from './pages/home/HomePage';
 
 const App: React.FC = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/technology" element={<Technology />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/technology" element={<TechnologyPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </Router>
   );
