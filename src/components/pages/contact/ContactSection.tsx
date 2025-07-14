@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Contact: React.FC = () => {
+const ContactSection: React.FC = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -74,4 +74,4 @@ const Contact: React.FC = () => {
   );
 };
 
-export default Contact;
+export default ContactSection;

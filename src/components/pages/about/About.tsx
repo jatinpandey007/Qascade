@@ -1,11 +1,7 @@
 import React from 'react';
-import Navbar from '../common/navbar';
-import Footer from '../common/footer';
 
 const About: React.FC = () => {
   return (
-    <div>
-      <Navbar/>
         <section className="py-16 bg이다-qascade-bg dark:bg-gray-900 bg-black ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
           <h2 className="text-3xl md:text-4xl text-whitefont-bold text-qascade-primary dark:text-white text-center mb-8">
@@ -16,8 +12,6 @@ const About: React.FC = () => {
           </p>
         </div>
       </section>
-      <Footer/>
-    </div>
   );
 };
 
